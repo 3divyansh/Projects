@@ -1,9 +1,10 @@
 const express = require('express');
 require('./DB/config');
+const cors = require('cors')
 const student = require('./DB/student')
 
 const app = express();
-app.use = (core());
+app.use = (cors());
 
 app.post("/SignUp", async (req, resp) => {
     let user = new User(req.body);
