@@ -2,8 +2,7 @@ import React  from "react";
 import { useState } from "react";
 
 
- function SignUp(){
-    const [name,setName] = useState("");
+ function Login(){
     const [email,setEmail] = useState("");
     const [password,setPassword] = useState("");
 
@@ -12,22 +11,16 @@ import { useState } from "react";
     // })
 
     const collectDate=()=>{
-      console.log(name,email, password);
+      console.log(email, password);
       
 
     }
     
    
     return(
-        <div className="signup-container">
+        <div className="Login-container">
             <div className="form-container">
-            <h1>SignUp</h1>
-            <input  className="inputBox" type="text" placeholder="Name" value={name} 
-                onChange={(event) => {
-                    setName(event.target.value);
-                    console.log(event.target.value);
-                  }}/>
-                
+            <h1>Login</h1>
             <input className="inputBox" type="text" placeholder="Email" value={email} 
             onChange={(event)=>{
                 setEmail(event.target.value);
@@ -48,4 +41,4 @@ import { useState } from "react";
     )
 }
 
-export default SignUp;
+export default Login;

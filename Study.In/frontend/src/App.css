@@ -1,22 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Merienda";
-  text-transform: capitalize;
-  
+  font-family: "Inconsolata";
+  text-transform: capitalize; 
 }
 
-.navbar {
-  height: auto;
+body{
+  background:
+   radial-gradient(circle, 
+   rgba(90,117,170,1) 18%,
+    rgba(217,133,188,1) 100%);
+}
+.nav-bar {
   display: flex;
-  background-color: rgb(155, 33, 231);
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-between;
+  align-items: center;
   padding: 10px 20px;
-  align-items: center; /* Ensures proper vertical alignment */
+  z-index: 999;
+  /* background-color: black; */
 }
 
 .logo {
   width: 300px;
+  float: left;
   height: auto;
   color: #fff;
   font-size: 2.5rem;
@@ -28,29 +34,111 @@
   0 0 0.2em rgb(255, 247, 0);
 }
 
- .login-btn {
+
+.nav-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar li {
+  padding: 10px 15px;
+  font-size: 1.2rem;
+}
+
+.nav-bar li a{
+  text-decoration: none;
   color: #fff;
-  text-align: right;
-  display: inline-block;
-  font-size: 1.7rem;
-  margin-top: 0px;
-  cursor: pointer; 
-  transition: none;
-  border: 2px solid transparent;
-  background-color:  rgb(155, 33, 231);;
-
+  /* padding: 5px; */
 }
 
-.signUp-btn {
-  display: inline-block;
-  transform: none;
+.nav-right {
+  display: flex;
+}
+
+/* Center the container */
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Full viewport height */
+}
+.Login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Full viewport height */
+}
+/* Style the form container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between inputs */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Input fields */
+.inputBox {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button styling */
+button {
+  width: 150px;
+  padding: 10px;
+  background: rgb(135,60,210);
+  color: rgb(7, 7, 7);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+button:hover {
+  background: rgb(237,203,26);
+  font-weight: 700;
+}
+
+/* 
+
+.nav-bar ul{
+  padding: 10px;
+  margin: 0px;
+  background-color: black;
+}
+
+
+.nav-bar li{
   padding: 15px;
+  text-align: center;
+  display: inline-block;
+
+}
+
+
+
+.nav-right{
+  float: right;
+  margin-top: -30px;
 }
 
 
 
 
 
+ */
 
 
 

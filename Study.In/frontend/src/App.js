@@ -1,13 +1,28 @@
 import './App.css';
+import "./index.css";
+import React from 'react';
 import Navbar from './components/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import SignUp from './components/SignUp';
+import Login from './components/Login';
+
+// import PrivateRoute from './components/PrivateRoute';
 
 function App() {
   return (
     <div className="App">
-      {/* <h1>Welcome Study.In</h1> */}
-      <Navbar/>
-      <SignUp/>
+      <BrowserRouter>
+        <Navbar/>
+        <Routes>
+          {/* <Route element={<PrivateRoute/>}>/</Route> */}
+          <Route path= "/signUp" element={<SignUp/>}/>
+          <Route path='/login' element={<Login/>}/>
+
+          
+        </Routes>      
+      </BrowserRouter>
+    
+    
     </div>
   );
 }

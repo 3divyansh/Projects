@@ -1,18 +1,20 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 export default function Navbar() {
   return (
-    <div>
-      <div className='navbar'>
-      <div className='logo'>Study.in</div>
+    <div className='nav-bar' >
+      <div className='logo'>Study.In</div>
         <ul>
-          <li className='login-btn'>Login</li>
-          <li className='signUp-btn'>SignUp</li>
-        </ul>
-  
-      </div>
-
-
-    </div>
+          <li>Home</li>
+          <li>Ncert</li>
+          <li>Ai Text</li>
+      </ul>
+    <ul className='nav-right'>
+          <li><Link to ='/signUp'>SignUp</Link></li>
+          <li><Link to ='/login'>Login</Link></li>
+         
+</ul>
+</div>
   )
 }
