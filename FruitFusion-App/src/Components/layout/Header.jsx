@@ -42,7 +42,7 @@ const Header = () => {
       <div className="container px-0">
         <nav className="navbar navbar-light navbar-expand-xl">
           <a href="index.html" className="navbar-brand">
-          <h1 className="text-warning display-6">FruitWhirl</h1>
+          <h1 className="text-warning display-6">FruitFusion</h1>
           </a>
           <button
             className="navbar-toggler py-2 px-3"
