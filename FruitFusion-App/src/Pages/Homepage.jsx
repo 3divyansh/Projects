@@ -1,8 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import OwlCarousel from 'react-owl-carousel';
-// import "owl.carousel/dist/assets/owl.carousel.css";
-// import "owl.carousel/dist/assets/owl.theme.default.css";
 const Homepage = () => {
   return (
     <>
@@ -39,7 +37,7 @@ const Homepage = () => {
                 <i className="fas fa-exchange-alt fa-3x text-white" />
               </div>
               <div className="featurs-content text-center">
-                <h5>30 Day Return</h5>
+                <h5>15 Day Return</h5>
                 <p className="mb-0">30 day money guarantee</p>
               </div>
             </div>
@@ -58,14 +56,13 @@ const Homepage = () => {
         </div>
       </div>
     </div>
-    {/* Featurs Section End */}
-    {/* Fruits Shop Start*/}
+  
     <div className="container-fluid fruite py-5">
       <div className="container py-5">
         <div className="tab-class text-center">
           <div className="row g-4">
             <div className="col-lg-4 text-start">
-              <h1>Our Organic Products</h1>
+              <h1>Our Organic Products && chemical with products</h1>
             </div>
             <div className="col-lg-8 text-end">
               <ul className="nav nav-pills d-inline-flex text-center mb-5">
